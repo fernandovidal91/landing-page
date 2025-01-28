@@ -9,3 +9,17 @@
   width: 40%;
   margin-top: 20px;
 }
+
+@media screen and (max-width: 768px) {
+  .congratulations img {
+    width: 90%;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .congratulations img {
+    width: 90%;
+    margin-top: 20px;
+  }
+}
