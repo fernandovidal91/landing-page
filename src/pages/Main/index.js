@@ -127,7 +127,7 @@ export default function Main() {
   };
 
   useEffect(() => {
-    if (timeLeft <= 1) return; // Para em 0:01
+    if (timeLeft <= 1) return;
 
     const timer = setInterval(() => {
       setTimeLeft(prev => prev - 1);
@@ -184,7 +184,7 @@ export default function Main() {
             </div>
             <div className="description-container">
               <h2 className="product-title">Obtén tu Caja Misteriosa</h2>
-              <h3><p className='product-price-old'><s>R$ 99</s></p><p className='product-price-new'>R$ 2.99</p></h3>
+              <h3><p className='product-price-old'><s>$ 99</s></p><p className='product-price-new'>$ 4.90</p></h3>
               <p className="product-description">
                 Para atraer nuevos clientes, lanzamos una nueva promoción. ¡Solo los primeros 100 participantes tendrán la oportunidad de ganar una caja misteriosa de Amazon! ¡Tu caja puede contener cualquier artículo por un valor total de 100 euros! Si el contenido de tu caja no te gusta, puedes devolverla y recibir una nueva. Hoy, estás invitado a participar en este concurso. Las fichas de producto muestran ejemplos de lo que podría estar en tu caja. Así es como funciona: responde a 5 preguntas simples y recibe una caja misteriosa de Amazon.
               </p>
@@ -312,7 +312,7 @@ export default function Main() {
           <div className="modal-body">
             <GiftIcon size={60} />
             <h3>
-            Felicidades, has demostrado que eres una persona real.
+              Felicidades, has demostrado que eres una persona real.
             </h3>
             <p>
             ¡Tienes la oportunidad de recibir una <b>Caja Misteriosa</b>! Para ello, solo tienes que elegir la caja de regalo correcta. Recuerda, solo tienes tres intentos, ¡así que elige con cuidado y buena suerte!
