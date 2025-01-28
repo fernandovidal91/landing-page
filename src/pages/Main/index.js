@@ -3,6 +3,7 @@ import { IoIosSearch } from "react-icons/io";
 import { FaInfoCircle } from "react-icons/fa";
 import { FaCartShopping } from "react-icons/fa6";
 import { Gift, GiftIcon } from 'lucide-react';
+import { useNavigate } from 'react-router'
 
 import './styles.css';
 
@@ -32,10 +33,10 @@ export default function Main() {
   const [, setAnswers] = useState({});
   const [showModal, setShowModal] = useState(false);
   const [showModalGifts, setShowModalGifts] = useState(false);
-  const [showModalGift, setShowModalGift] = useState(false);
   const [selectedBoxes, setSelectedBoxes] = useState([]);
   const [gameOver, setGameOver] = useState(false);
   const [attempts, setAttempts] = useState(3);
+  const navigate = useNavigate();
 
   const images = [
     MainImage,
@@ -88,22 +89,15 @@ export default function Main() {
     const remainingAttempts = attempts - 1;
     setAttempts(remainingAttempts);
 
-    // Always win on second attempt
     if (remainingAttempts === 1) {
       setShowModalGifts(false)
-      setShowModalGift(true);
+      navigate('/congratulations')
     }
 
     if (remainingAttempts === 0) {
       setGameOver(true);
     }
   };
-
-  // const resetGame = () => {
-  //   setAttempts(3);
-  //   setGameOver(false);
-  //   setSelectedBoxes([]);
-  // };
 
   const handleThumbnailClick = (image, index) => {
     setCurrentImage(image);
@@ -354,16 +348,6 @@ export default function Main() {
                 </button>
               ))}
             </div>
-          </div>
-        </div>
-      )}
-
-      {showModalGift && (
-        <div className="modal">
-          <div className="modal-body">
-            <h3>
-              ¡Felicidades! ¡Ganaste! 🎉
-            </h3>
           </div>
         </div>
       )}
