@@ -27,10 +27,6 @@ export default function Congratulations() {
       </nav>
       
       <section class="congratulations">
-        <h3>
-          ¡Felicidades! ¡Ganaste! 🎉
-        </h3>
-
         <img src={Congrutulations} alt="¡Felicidades! ¡Ganaste!" />
       </section>
     </>
