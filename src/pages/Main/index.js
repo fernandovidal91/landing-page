@@ -24,7 +24,7 @@ import Comment3 from '../../assets/jbl.webp';
 
 import ShortLogo from '../../assets/amazon-sort-logo.png';
 
-export default function Header() {
+export default function Main() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [timeLeft, setTimeLeft] = useState(300);
   const [currentImage, setCurrentImage] = useState(MainImage);
@@ -186,7 +186,7 @@ export default function Header() {
               <h2 className="product-title">Obtén tu Caja Misteriosa</h2>
               <h3><p className='product-price-old'><s>R$ 99</s></p><p className='product-price-new'>R$ 2.99</p></h3>
               <p className="product-description">
-              Compré la caja misteriosa sin muchas expectativas, ¡pero me quedé en shock cuando la abrí y encontré un iPhone 15! Valió cada centavo, fue la mejor sorpresa de mi vida.
+                Para atraer nuevos clientes, lanzamos una nueva promoción. ¡Solo los primeros 100 participantes tendrán la oportunidad de ganar una caja misteriosa de Amazon! ¡Tu caja puede contener cualquier artículo por un valor total de 100 euros! Si el contenido de tu caja no te gusta, puedes devolverla y recibir una nueva. Hoy, estás invitado a participar en este concurso. Las fichas de producto muestran ejemplos de lo que podría estar en tu caja. Así es como funciona: responde a 5 preguntas simples y recibe una caja misteriosa de Amazon.
               </p>
               <div className="timer">
                 <span className="timer-label">La oferta termina en</span>
